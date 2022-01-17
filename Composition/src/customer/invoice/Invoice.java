@@ -48,11 +48,11 @@ public class Invoice {
 	public double getAmountAfterDiscount() {
 		double r= amount /100 * customer.getDiscount();
 		return r;
-	}
+		}
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return "Invoice [ id = "+id+ ", Customer = " +customer.getName()+ " (" +customer.getId()+") " + "("+customer.getDiscount()+"%), amount = " +amount+"]";
-	}
+		
+		return "Invoice [ id = "+id+ ", customer = " + customer.toString() + ", amount = " + amount+ "]";
+}
 }
